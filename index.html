@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ôn tập kiểm tra giữa kì Tin 9</title>
+<style>
+:root{--desk:#e6e8ec;--bar:#2b579a;--paper:#fff;--ink:#111;--hl:#d9f2d9;--hlb:#2e8b57;--muted:#555;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--desk:#1f2124;--bar:#1d3b6b}}
+:root[data-theme="dark"]{--desk:#1f2124;--bar:#1d3b6b}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--desk);font-family:"Times New Roman",Times,serif;color:var(--ink)}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bar);color:#fff;display:flex;justify-content:space-between;align-items:center;gap:8px;padding:8px 14px;font:600 14px system-ui,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bar);z-index:10}
+.bar button{font:inherit;border:0;border-radius:4px;padding:6px 10px;background:#fff;color:#2b579a;cursor:pointer}
+.page{background:var(--paper);width:min(794px,calc(100% - 16px));margin:16px auto;padding:clamp(18px,6vw,64px);box-shadow:0 2px 10px rgba(0,0,0,.3);font-size:17px;line-height:1.5}
+h1{font-size:22px;text-align:center;margin:0 0 4px;text-transform:uppercase}
+h2{font-size:18px;margin:18px 0 6px}
+h3{font-size:17px;margin:14px 0 4px;font-style:italic}
+.c{text-align:center}
+.q{margin:10px 0}
+.q b{font-weight:700}
+.o{display:block;padding:1px 6px;margin-left:14px;border-left:3px solid transparent}
+.show .o.ok,.show .tf.ok{background:var(--hl);border-left-color:var(--hlb);color:#111}
+.tf{display:block;margin-left:14px;padding:1px 6px;border-left:3px solid transparent}
+.tf i{font-style:normal;float:right;margin-left:8px;font-weight:700;color:var(--hlb);display:none}
+.show .tf i{display:inline}
+.o.ok,.tf.ok{font-weight:700}
+.wrap{overflow-x:auto}
+table{border-collapse:collapse;margin:8px 0;font-size:16px}
+td,th{border:1px solid #444;padding:3px 8px;text-align:center}
+.ans{display:none;margin:4px 0 0 14px;padding:6px 10px;border-left:3px solid var(--hlb);background:var(--hl);color:#111}
+.show .ans{display:block}
+.ans p{margin:2px 0}
+@media print{.bar{display:none}body{background:#fff}.page{box-shadow:none;margin:0;width:auto}}
+</style>
+</head>
+<body>
+<div class="bar"><span>📄 Ôn tập giữa kì Tin 9 · 26-27</span><button id="t">Hiện đáp án</button></div>
+
+<section class="page" id="p1">
+<h1>Ôn tập kiểm tra giữa kì Tin 9 26-27</h1>
+<p class="c"><b>A/ TRẮC NGHIỆM KHÁCH QUAN (7,0 điểm)</b></p>
+<h2 class="c">ĐỀ 1</h2>
+<h3>I/ Trắc nghiệm nhiều phương án lựa chọn (3,0 điểm)</h3>
+<div class="wrap"><table id="k1"></table></div>
+<div id="d1"></div>
+</section>
+
+<section class="page" id="p2">
+<h2 class="c">ĐỀ 2</h2>
+<div class="wrap"><table id="k2"></table></div>
+<div id="d2"></div>
+</section>
+
+<section class="page" id="p3">
+<h3>II/ Trắc nghiệm đúng sai (4,0 điểm)</h3>
+<div class="wrap"><table id="k3"></table></div>
+<div id="d3"></div>
+</section>
+
+<section class="page" id="p4">
+<p><b>B. TỰ LUẬN (3,0 điểm)</b></p>
+<div id="tl"></div>
+</section>
+
+<script>
+const L="ABCD";
+const D1=[
+["Trong đô thị, thiết bị nào sau đây được gắn bộ xử lí thông tin để điều khiển việc lưu thông, giúp cho các phương tiện trên đường phố di chuyển một cách có trật tự?",["Xe ô tô tự lái.","Đèn giao thông.","Camera an ninh.","Biển báo giao thông."],1],
+["Loại đồng hồ nào sau đây được gắn bộ xử lí thông tin?",["Đồng hồ quay lắc, chạy bằng dây cót.","Đồng hồ điện tử không dùng pin.","Đồng hồ thông minh.","Đồng hồ quartz (thạch anh)."],2],
+["Thiết bị nào sau đây KHÔNG được gắn bộ xử lí thông tin?",["Máy giặt.","Máy rửa bát.","Robot hút bụi.","Máy khoan cầm tay."],3],
+["Những thiết bị có gắn bộ xử lí thông tin như tivi, máy giặt, lò vi sóng, tủ lạnh, máy rửa bát,... thường được sử dụng theo em phương án nào hợp lý nhất?",["Trong gia đình.","Trong công xưởng.","Trong bệnh viện.","Trong trường học."],0],
+["Trong các phương án về những thiết bị có gắn bộ xử lí thông tin như máy đo huyết áp tự động, thiết bị giám sát sức khỏe, thiết bị chẩn đoán hình ảnh,... thường được sử dụng trong nhiều lĩnh vực. Theo em phương án nào phù hợp?",["Trong nông nghiệp.","Trong công nghiệp.","Trong y tế.","Trong giáo dục."],2],
+["Bạn Quỳnh trao đổi với Dung về những đặc điểm nào là ưu điểm, thể hiện khả năng của máy tính. Em chọn phương án nào thể hiện được nội dung trao đổi của hai bạn.",["Tính toán nhanh, không lưu trữ lâu dài, kết nối toàn cầu.","Tính toán nhanh, lưu trữ lớn, kết nối toàn cầu.","Tưởng tượng phong phú, lưu trữ lớn, kết nối toàn cầu.","Tưởng tượng phong phú, lưu trữ lớn, kết nối an toàn."],1],
+["Phương án nào sau đây không phải là tác động tiêu cực của công nghệ kĩ thuật số đến đời sống con người?",["Nhờ trí tuệ nhân tạo làm bài tập về nhà.","Truy cập mạng xã hội trong nhiều giờ.","Thường xuyên sử dụng phần mềm soạn thảo văn bản để làm báo cáo.","Vừa ăn vừa xem video trên trang YouTube."],2],
+["Hành vi nào sau đây khi hoạt động trong môi trường số không vi phạm pháp luật, trái đạo đức, thiếu văn hóa?",["Đăng bài hoặc bình luận gây mâu thuẫn vùng miền.","Quảng cáo bán hàng, hóa đơn bị cấm.","Sử dụng trái phép tài khoản mạng của tổ chức và cá nhân khác.","Chia sẻ thông tin về lớp học ngôn ngữ lập trình trực tuyến."],3],
+["Hãy tìm hiểu và cho biết phần mềm nào dưới đây hỗ trợ dựng các hình hình học, mô phỏng các hoạt động trong hình học và giúp giải toán.",["GeoGebra.","ChemLab.","Crocodile Physics.","Flowgorithm."],0],
+["Hãy tìm hiểu và cho biết phần mềm nào dưới đây mô phỏng các thí nghiệm vật lí trong môn Khoa học tự nhiên.",["Crocodile Physics.","ChemLab.","GeoGebra.","Geometer’s Sketchpad."],0],
+["Hãy tìm hiểu và cho biết trang web nào dưới đây là phần mềm trực tuyến mô phỏng những hoạt động, thí nghiệm trong nhiều lĩnh vực như Toán học, Vật lí, Kĩ thuật, Hóa học,...",["https://classroom.google.com/","https://openclassroom.edu.vn/lab/","https://crocodileclips.net/","https://sketchpad.keycurriculum.com/"],1],
+["Bạn Đạt nói “Phần mềm mô phỏng có thể giúp tìm hiểu, nghiên cứu hoạt động của một đối tượng một cách toàn diện hơn so với trải nghiệm trong thực tế”. Theo em phương án nào dưới đây thể hiện được rõ ý của bạn Đạt.",["Phần mềm mô phỏng có chi phí thấp nên có điều kiện để thực hiện nhiều lần.","Phần mềm mô phỏng không gây ra nguy hiểm nên người dùng có thể thực hiện nhiều lần.","Phần mềm mô phỏng thân thiện nên được người dùng yêu thích, hứng thú trải nghiệm.","Phần mềm mô phỏng có thể tạo ra nhiều tình huống để nghiên cứu đối tượng một cách đầy đủ."],3]
+];
+const D2=[
+["Tiêu chí nào sau đây không được dùng để đánh giá chất lượng thông tin?",["Tính sử dụng được.","Tính chính xác.","Tính phổ biến.","Tính cập nhật."],2],
+["Phương án nào sau đây là một ứng dụng thực tế của công nghệ máy tính trong lĩnh vực y tế?",["Máy tính được sử dụng để nhận dạng biển số xe.","Máy tính được sử dụng để làm việc từ xa.","Máy tính được sử dụng để chơi các trò chơi thực tế ảo.","Máy tính được sử dụng để quản lí hồ sơ bệnh án của bệnh nhân."],3],
+["Hành động nào sau đây là vi phạm pháp luật, trái đạo đức, thiếu văn hoá khi hoạt động trong môi trường số?",["Tự ý đăng thông tin cá nhân của người khác lên mạng xã hội.","Nhắn tin trò chuyện với bạn bè.","Xem đánh giá sản phẩm trước khi mua hàng.","Sử dụng những phần mềm có bản quyền."],0],
+["Xem phim “lậu” là",["hành vi vi phạm quyền nhân thân, uy tín của cá nhân và tổ chức.","hành vi vi phạm pháp luật liên quan đến sở hữu trí tuệ, sở hữu tài sản, đánh bạc,...","hành vi vi phạm đến việc bảo đảm an toàn thông tin trên không gian mạng.","hành vi tuyên truyền, quảng cáo, giới thiệu sản phẩm, dịch vụ không phù hợp quy định của pháp luật, trái với thuần phong mĩ tục, lối sống văn minh."],1],
+["Phần mềm nào dưới đây cho phép em chạy thử thuật toán dạng sơ đồ khối trước khi cài đặt trong một ngôn ngữ lập trình?",["Geometer’s Sketchpad.","ChemLab.","Flowgorithm.","Crocodile Physics."],2],
+["Phương án nào sau đây là tác động tiêu cực của công nghệ kĩ thuật số đến xã hội?",["Gia tăng lượng chất thải nông nghiệp ra môi trường.","Thúc đẩy kinh doanh.","Dễ dàng truy cập thông tin.","Sự lan truyền của những thông tin sai lệch và tin tức giả mạo."],3],
+["Phát biểu nào sau đây sai?",["Tính sử dụng được cung cấp cho người tìm kiếm cái nhìn tổng thể về vấn đề được đặt ra.","Không phải thông tin nào cũng hữu ích đối với việc giải quyết vấn đề.","Chất lượng thông tin được đánh giá thông qua tính mới, tính chính xác, tính đầy đủ, tính sử dụng được.","Tính mới cho biết thông tin đã bị lỗi thời chưa."],0],
+["Khi quan sát sự chuyển hoá của các dạng năng lượng thông qua phần mềm PhET, em có thể thay đổi thiết bị chuyển hoá năng lượng thành điện năng nào?",["Ánh sáng mặt trời.","Pin mặt trời.","Quạt điện.","Bóng đèn compact."],1],
+["Phát biểu nào sau đây sai?",["Bộ xử lí không chỉ xuất hiện trong máy tính hay điện thoại thông minh mà còn được gắn vào các thiết bị khác để hỗ trợ xử lí bất kì loại thông tin nào có thể số hoá được.","Những thiết bị có gắn bộ xử lí hiện diện xung quanh ta và ngày càng trở nên quen thuộc.","Hệ thống thu phí tự động trên đường cao tốc là một ví dụ về thiết bị có gắn bộ xử lí trong sản xuất công nghiệp.","Ô tô lái tự động là một ví dụ về thiết bị có gắn bộ xử lí trong lĩnh vực giao thông."],2],
+["Phương án nào sau đây là ví dụ về thiết bị có gắn bộ xử lí trong lĩnh vực nông nghiệp?",["Máy rút tiền tự động.","Máy tim phổi.","Máy chiếu trong lớp học.","Máy cày tự động."],3],
+["Phát biểu nào sau đây sai?",["Số lượng bản tin làm cho thông tin trở thành hữu ích.","Internet là một kho thông tin khổng lồ.","Thông tin là cơ sở để đưa ra các quyết định.","Cần phải quan tâm đến chất lượng thông tin khi tìm kiếm, tiếp nhận, trao đổi và sử dụng thông tin để có thể đưa ra các quyết định đúng đắn."],0],
+["Khi tìm thông tin về kì thi tuyển sinh lớp 10 năm 2025, bạn Nhi đã không để ý đến tiêu đề bài báo nên đã xem nhầm sang kì thi tuyển sinh lớp 10 năm 2024. Theo em, sơ suất này vi phạm tiêu chí nào về chất lượng thông tin?",["Tính sử dụng được.","Tính mới.","Tính chính xác.","Tính đầy đủ."],1]
+];
+const TF=[
+["Khi trao đổi về Một số vấn đề pháp lý về sử dụng dịch vụ Internet, bạn Quỳnh có ý trao đổi với bạn Đạt về Hệ sinh thái kỹ thuật số bao gồm các yếu tố, em nhận xét gì về các phương án sau.",["Con người, thiết bị và mạng internet.","Chỉ có phần cứng và phần mềm.","Chỉ bao gồm mạng xã hội và ứng dụng di động.","Các thiết bị điện tử và ứng dụng."],"ĐSSĐ"],
+["Trong một cuộc thi rung chuông vàng, câu hỏi được đặt ra là: “Tại sao cần phân tích thông tin trước khi đưa ra quyết định trong giải quyết vấn đề?”. Em nghĩ gì về các câu trả lời sau đây đáp ứng đúng nội dung của câu hỏi đó?",["Để xác định vấn đề cốt lõi và đưa ra giải pháp phù hợp.","Để đảm bảo thông tin được lưu trữ đúng cách.","Để tiết kiệm thời gian thu thập thông tin.","Để giảm rủi ro khi giải quyết vấn đề ta phân tích kĩ trước khi đưa ra phương án giải quyết."],"ĐSSĐ"],
+["Bạn Đạt được giao nhiệm vụ phân tích một báo cáo về môi trường năm 2024. Em có nhận xét gì về các phương án sau đây về nhiệm vụ bạn Đạt?",["Xác minh số liệu trong báo cáo bằng các nguồn tin cậy khác.","Chấp nhận toàn bộ nội dung báo cáo vì đó là tài liệu chính thức.","Tập trung vào phần tóm tắt mà không cần đọc kỹ phần nội dung chi tiết.","Sử dụng thông tin trong báo cáo nhưng cần kiểm tra độ chính xác."],"ĐSSĐ"],
+["Bạn Lan cần đánh giá hiệu quả của một phương pháp học tập mới bằng cách sử dụng phần mềm mô phỏng. Bạn nghĩ ra một số phương án, theo em có nhận xét gì về các phương án sau đây?",["Dùng phần mềm để tạo môi trường giả lập và kiểm tra kết quả áp dụng phương pháp.","Thu thập ý kiến người dùng bằng cách phỏng vấn trực tiếp.","Dựa vào kết quả mô phỏng để đánh giá sự hiệu quả của phương pháp.","Dùng phần mềm để lưu trữ dữ liệu mà không cần phân tích."],"ĐSĐS"]
+];
+const TL=[
+["Em hãy giải thích tại sao việc đánh giá chất lượng thông tin trên Internet lại quan trọng và nêu các bước cụ thể để thực hiện việc này?",["Tầm quan trọng của việc đánh giá chất lượng thông tin.","Kiểm tra nguồn gốc thông tin.","Đối chiếu thông tin với các nguồn khác.","Đánh giá tính logic và bằng chứng hỗ trợ."]],
+["Luật An ninh mạng ở Việt Nam quy định những nguyên tắc nào nhằm bảo vệ quyền và lợi ích hợp pháp của người dùng Internet?",["Luật An ninh mạng ở Việt Nam đặt ra một số nguyên tắc như:","Bảo vệ thông tin cá nhân của người dùng khỏi sự thu thập và sử dụng trái phép.","Quy định các tổ chức, doanh nghiệp cung cấp dịch vụ Internet phải lưu trữ và bảo mật dữ liệu người dùng.","Xử lý nghiêm các hành vi xâm phạm an ninh mạng như tấn công mạng, phát tán mã độc, hoặc lừa đảo trực tuyến.","Tạo cơ chế kiểm soát và xử lý nội dung vi phạm pháp luật, bao gồm tin giả, thông tin xấu độc."]],
+["Em hãy phân tích cách sử dụng phần mềm mô phỏng trong việc giải quyết một vấn đề thực tiễn thuộc lĩnh vực học tập của em.",["Xác định vấn đề thực tiễn cần giải quyết bằng phần mềm mô phỏng.","Chọn phần mềm mô phỏng phù hợp.","Thực hành mô phỏng và phân tích dữ liệu.","Đưa ra giải pháp hoặc bài học rút ra từ kết quả mô phỏng."]],
+["Em hãy nêu một số khả năng của máy tính hỗ trợ con người trong cuộc sống.",["Máy tính là thiết bị điện tử có thể hỗ trợ tích cực nhiều hoạt động của con người do có khả năng tính toán nhanh, chính xác, lưu trữ dung lượng lớn, kết nối toàn cầu với tốc độ cao.","Ngày nay, với sự phát triển của trí tuệ nhân tạo AI, máy tính dần dần có thể thay thế con người trong mọi lĩnh vực đời sống xã hội."]]
+];
+const $=id=>document.getElementById(id);
+function mc(list,start,box,key){
+  $(key).innerHTML="<tr><th>Câu hỏi</th>"+list.map((_,i)=>"<th>"+(i+1)+"</th>").join("")+"</tr><tr><th>Đáp án</th>"+list.map(q=>"<td>"+L[q[2]]+"</td>").join("")+"</tr>";
+  $(box).innerHTML=list.map((q,i)=>"<div class='q'><b>Câu "+(i+1)+(start?".":":")+"</b> "+q[0]+q[1].map((o,j)=>"<span class='o"+(j==q[2]?" ok":"")+"'>"+L[j]+". "+o+"</span>").join("")+"</div>").join("");
+}
+mc(D1,0,"d1","k1");mc(D2,1,"d2","k2");
+$("k3").innerHTML="<tr><th>Câu</th>"+[13,14,15,16].map(n=>"<th colspan=4>"+n+"</th>").join("")+"</tr><tr><th>Lệnh hỏi</th>"+[0,1,2,3].map(()=>"<td>a)</td><td>b)</td><td>c)</td><td>d)</td>").join("")+"</tr><tr><th>Đáp án (Đ/S)</th>"+TF.map(t=>[...t[2]].map(c=>"<td>"+c+"</td>").join("")).join("")+"</tr>";
+$("d3").innerHTML=TF.map((t,i)=>"<div class='q'><b>Câu "+(13+i)+":</b> "+t[0]+t[1].map((o,j)=>"<span class='tf"+(t[2][j]=="Đ"?" ok":"")+"'>"+L[j].toLowerCase()+") "+o+"<i>"+t[2][j]+"</i></span>").join("")+"</div>").join("");
+$("tl").innerHTML=TL.map((t,i)=>"<div class='q'><b>Câu "+(17+i)+" (1 điểm):</b> "+t[0]+"<div class='ans'>"+t[1].map(x=>"<p>– "+x+"</p>").join("")+"</div></div>").join("");
+let on=false;
+$("t").onclick=()=>{on=!on;document.body.classList.toggle("show",on);$("t").textContent=on?"Ẩn đáp án":"Hiện đáp án"};
+</script>
+</body>
+</html>
